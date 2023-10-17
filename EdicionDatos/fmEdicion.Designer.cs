@@ -55,6 +55,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tbNombrePrincipal = new System.Windows.Forms.TextBox();
             this.btIntroDatos = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -332,11 +335,41 @@
             this.btIntroDatos.UseVisualStyleBackColor = true;
             this.btIntroDatos.Click += new System.EventHandler(this.btIntroDatos_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(90, 296);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(216, 13);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Convierte Euros a Dolares y Dolares a Euros";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(87, 342);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(43, 13);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "Euros €";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(254, 342);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(52, 13);
+            this.label13.TabIndex = 7;
+            this.label13.Text = "Dolares $";
+            // 
             // fmEdicion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.btCambiar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tbDolares);
@@ -382,6 +415,9 @@
         private System.Windows.Forms.Button btIntroDatos;
         private System.Windows.Forms.TextBox tbNombrePrincipal;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }
 
