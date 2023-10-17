@@ -316,9 +316,9 @@
             // 
             // tbNombrePrincipal
             // 
-            this.tbNombrePrincipal.Enabled = false;
             this.tbNombrePrincipal.Location = new System.Drawing.Point(338, 217);
             this.tbNombrePrincipal.Name = "tbNombrePrincipal";
+            this.tbNombrePrincipal.ReadOnly = true;
             this.tbNombrePrincipal.Size = new System.Drawing.Size(246, 26);
             this.tbNombrePrincipal.TabIndex = 16;
             // 

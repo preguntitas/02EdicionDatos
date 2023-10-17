@@ -12,9 +12,15 @@ namespace EdicionDatos
 {
     public partial class fmIntroDatos : Form
     {
+        public TextBox tbNombreMostrar;
         public fmIntroDatos()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tbNombreMostrar.Text = tbNombreSecundario.Text;
         }
     }
 }
