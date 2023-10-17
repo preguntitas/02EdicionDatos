@@ -52,6 +52,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btCambiar = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbNombreMostrar = new System.Windows.Forms.TextBox();
+            this.btIntroDatos = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +62,9 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btIntroDatos);
+            this.panel1.Controls.Add(this.tbNombreMostrar);
+            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.laLocalidad);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.laTelefono);
@@ -299,6 +305,32 @@
             this.btCambiar.UseVisualStyleBackColor = true;
             this.btCambiar.Click += new System.EventHandler(this.btCambiar_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(37, 220);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(295, 20);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Nombre Mostrado desde otro Formulario";
+            // 
+            // tbNombreMostrar
+            // 
+            this.tbNombreMostrar.Enabled = false;
+            this.tbNombreMostrar.Location = new System.Drawing.Point(338, 217);
+            this.tbNombreMostrar.Name = "tbNombreMostrar";
+            this.tbNombreMostrar.Size = new System.Drawing.Size(246, 26);
+            this.tbNombreMostrar.TabIndex = 16;
+            // 
+            // btIntroDatos
+            // 
+            this.btIntroDatos.Location = new System.Drawing.Point(618, 217);
+            this.btIntroDatos.Name = "btIntroDatos";
+            this.btIntroDatos.Size = new System.Drawing.Size(169, 26);
+            this.btIntroDatos.TabIndex = 17;
+            this.btIntroDatos.Text = "Introduce Datos";
+            this.btIntroDatos.UseVisualStyleBackColor = true;
+            // 
             // fmEdicion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -346,6 +378,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btCambiar;
+        private System.Windows.Forms.Button btIntroDatos;
+        private System.Windows.Forms.TextBox tbNombreMostrar;
+        private System.Windows.Forms.Label label7;
     }
 }
 
