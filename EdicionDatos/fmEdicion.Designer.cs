@@ -290,6 +290,7 @@
             // 
             // btCambiar
             // 
+            this.btCambiar.Enabled = false;
             this.btCambiar.Location = new System.Drawing.Point(186, 397);
             this.btCambiar.Name = "btCambiar";
             this.btCambiar.Size = new System.Drawing.Size(75, 23);
