@@ -52,10 +52,19 @@
     <Compile Include="fmEdicion.Designer.cs">
       <DependentUpon>fmEdicion.cs</DependentUpon>
     </Compile>
+    <Compile Include="fmIntroDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmIntroDatos.Designer.cs">
+      <DependentUpon>fmIntroDatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fmEdicion.resx">
       <DependentUpon>fmEdicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmIntroDatos.resx">
+      <DependentUpon>fmIntroDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

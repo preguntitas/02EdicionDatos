@@ -12,6 +12,8 @@ namespace EdicionDatos
 {
     public partial class fmEdicion : Form
     {
+        fmIntroDatos VentanaIntroduccion = new fmIntroDatos(); //Definición global
+
         public fmEdicion()
         {
             InitializeComponent();
