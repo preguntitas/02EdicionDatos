@@ -39,7 +39,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.laDni = new System.Windows.Forms.Label();
+            this.laCIFNIF = new System.Windows.Forms.Label();
             this.laCodigoPostal = new System.Windows.Forms.Label();
             this.laTelefono = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -53,7 +53,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btCambiar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.tbNombreMostrar = new System.Windows.Forms.TextBox();
+            this.tbNombrePrincipal = new System.Windows.Forms.TextBox();
             this.btIntroDatos = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -63,13 +63,13 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btIntroDatos);
-            this.panel1.Controls.Add(this.tbNombreMostrar);
+            this.panel1.Controls.Add(this.tbNombrePrincipal);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.laLocalidad);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.laTelefono);
             this.panel1.Controls.Add(this.laCodigoPostal);
-            this.panel1.Controls.Add(this.laDni);
+            this.panel1.Controls.Add(this.laCIFNIF);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
@@ -178,14 +178,14 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "Telefono";
             // 
-            // laDni
+            // laCIFNIF
             // 
-            this.laDni.AutoSize = true;
-            this.laDni.Location = new System.Drawing.Point(511, 56);
-            this.laDni.Name = "laDni";
-            this.laDni.Size = new System.Drawing.Size(16, 20);
-            this.laDni.TabIndex = 10;
-            this.laDni.Text = "x";
+            this.laCIFNIF.AutoSize = true;
+            this.laCIFNIF.Location = new System.Drawing.Point(511, 56);
+            this.laCIFNIF.Name = "laCIFNIF";
+            this.laCIFNIF.Size = new System.Drawing.Size(16, 20);
+            this.laCIFNIF.TabIndex = 10;
+            this.laCIFNIF.Text = "x";
             // 
             // laCodigoPostal
             // 
@@ -314,13 +314,13 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Nombre Mostrado desde otro Formulario";
             // 
-            // tbNombreMostrar
+            // tbNombrePrincipal
             // 
-            this.tbNombreMostrar.Enabled = false;
-            this.tbNombreMostrar.Location = new System.Drawing.Point(338, 217);
-            this.tbNombreMostrar.Name = "tbNombreMostrar";
-            this.tbNombreMostrar.Size = new System.Drawing.Size(246, 26);
-            this.tbNombreMostrar.TabIndex = 16;
+            this.tbNombrePrincipal.Enabled = false;
+            this.tbNombrePrincipal.Location = new System.Drawing.Point(338, 217);
+            this.tbNombrePrincipal.Name = "tbNombrePrincipal";
+            this.tbNombrePrincipal.Size = new System.Drawing.Size(246, 26);
+            this.tbNombrePrincipal.TabIndex = 16;
             // 
             // btIntroDatos
             // 
@@ -330,6 +330,7 @@
             this.btIntroDatos.TabIndex = 17;
             this.btIntroDatos.Text = "Introduce Datos";
             this.btIntroDatos.UseVisualStyleBackColor = true;
+            this.btIntroDatos.Click += new System.EventHandler(this.btIntroDatos_Click);
             // 
             // fmEdicion
             // 
@@ -357,7 +358,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label laTelefono;
         private System.Windows.Forms.Label laCodigoPostal;
-        private System.Windows.Forms.Label laDni;
+        private System.Windows.Forms.Label laCIFNIF;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -379,7 +380,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btCambiar;
         private System.Windows.Forms.Button btIntroDatos;
-        private System.Windows.Forms.TextBox tbNombreMostrar;
+        private System.Windows.Forms.TextBox tbNombrePrincipal;
         private System.Windows.Forms.Label label7;
     }
 }

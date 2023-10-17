@@ -87,5 +87,23 @@ namespace EdicionDatos
             TextBox mitextbox = (TextBox)sender; // Seleccionamos
             mitextbox.SelectAll(); // para que al teclear se borre todo
         }
+
+        private void btIntroDatos_Click(object sender, EventArgs e)
+        {
+            VentanaIntroduccion.tbNombreMostrar = tbNombrePrincipal;
+            tbNombrePrincipal.Text = "";
+            if (VentanaIntroduccion.ShowDialog() == DialogResult.OK)
+            {
+                //Los nombres de los controles label: laNombre,laDirección, etc. son los indicados con una X en la Interface.
+            //Recordar poner propiedad modifiers=public en los TextBox del formulario secundario precedidos aquí por VentanaIntroduccion
+            laNombre.Text = VentanaIntroduccion.tbNombreSecundario.Text;
+                laDireccion.Text = VentanaIntroduccion.tbDireccion.Text;
+                laLocalidad.Text = VentanaIntroduccion.tbLocalidad.Text;
+                laTelefono.Text = VentanaIntroduccion.tbTelefono.Text;
+                laEmail.Text = VentanaIntroduccion.tbEmail.Text;
+                laCodigoPostal.Text = VentanaIntroduccion.tbCodigopos.Text;
+                laCIFNIF.Text = VentanaIntroduccion.tbDNICIF.Text;
+            }
+        }
     }
 }
