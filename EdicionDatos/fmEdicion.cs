@@ -1,4 +1,5 @@
-﻿using System;
+﻿using elFormulario;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -104,6 +105,14 @@ namespace EdicionDatos
                 laCodigoPostal.Text = VentanaIntroduccion.tbCodigopos.Text;
                 laCIFNIF.Text = VentanaIntroduccion.tbDNICIF.Text;
             }
+        }
+
+        private void btAcercade_Click(object sender, EventArgs e)
+        {
+            fmAcercade VentanaAcercade;
+            VentanaAcercade = new fmAcercade();
+            VentanaAcercade.ShowDialog(); // la queremos modal, ya que queremos tomar el control de la aplicacion.
+            VentanaAcercade.Dispose(); // ya no necesitamos el objeto, así que lo destruimos.
         }
     }
 }
